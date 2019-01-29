@@ -26,22 +26,22 @@ String Parameter
 Name : baseURL
 
 Add build step
-npm install
-npm test -- --baseURL="$baseURL"
+``npm install
+npm test -- --baseURL="$baseURL"``
 
 add post build step 
 1.
-cd directory
+``cd directory
 
-IF exist directory/Allure_Reports (echo Folder Allure_Reports already exists) ELSE (mkdir Allure_Reports)
+IF exist directory/Allure_Reports (echo Folder Allure_Reports already exists) ELSE (mkdir Allure_Reports)``
 
 2. Create allure reports directory
-cd directory/Allure_Reports
+``cd directory/Allure_Reports
 
-cp -R directory/webdriverioFramework/reports directory/Allure_Reports/%BUILD_NUMBER%
+cp -R directory/webdriverioFramework/reports directory/Allure_Reports/%BUILD_NUMBER%``
 
 3.
-allure generate directory/webdriverioFramework/reports/allure-results --clean
+``allure generate directory/webdriverioFramework/reports/allure-results --clean``
 
 
 4. Publish allure reports through html reports
