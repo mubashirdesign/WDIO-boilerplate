@@ -21,6 +21,10 @@ Add new project
 Under general>advanced select custom workspace
 Select your directory XXXXXXXX\node_modules\.bin
 
+Add Parameters
+String Parameter
+Name : baseURL
+
 Add build step
 npm install
 npm test -- --baseURL="$baseURL"
