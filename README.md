@@ -31,16 +31,15 @@ npm test -- --baseURL="$baseURL"``
 
 add post build step 
 1.
-``cd directory
+``cd location (i.e desktop/)``
 
-IF exist directory/Allure_Reports (echo Folder Allure_Reports already exists) ELSE (mkdir Allure_Reports)``
+``IF exist location/Allure_Reports (echo Folder Allure_Reports already exists) ELSE (mkdir Allure_Reports)``
 
-2. Create allure reports directory
-``cd directory/Allure_Reports
+2. CD into directory reports, copy the allure report with build number from the allure-results file
+``cd directory/Allure_Reports``
+``cp -R directory/webdriverioFramework/reports directory/Allure_Reports/%BUILD_NUMBER%``
 
-cp -R directory/webdriverioFramework/reports directory/Allure_Reports/%BUILD_NUMBER%``
-
-3.
+3. Run Allure Reports
 ``allure generate directory/webdriverioFramework/reports/allure-results --clean``
 
 
