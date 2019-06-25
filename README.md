@@ -1,4 +1,4 @@
-Setting up WebdriverIO with mocha/chai/selenium-standalone and jenkins.
+Setting up WebdriverIO with mocha/chai/selenium-standalone and jenkins..
 
 
 To use this package
