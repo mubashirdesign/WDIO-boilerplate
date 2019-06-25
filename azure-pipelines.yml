@@ -23,7 +23,7 @@ steps:
   inputs:
     command: 'custom'
     workingDir: '$(System.defaultWorkingDirectory)'
-    customCommand: 'start'
+    customCommand: 'test'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
