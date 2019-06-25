@@ -118,12 +118,12 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['dot',
     'spec',
-    // ['junit', {
-    //     outputDir: './reports/junitResults/',
-    //     outputFileFormat: function(opts) { // optional
-    //         return `results-${opts.cid}.${opts.capabilities}.xml`
-    //     }
-    // }],
+    ['junit', {
+        outputDir: './reports/junitResults/',
+        outputFileFormat: function(opts) { // optional
+            return `results-${opts.cid}.${opts.capabilities}.xml`
+        }
+    }],
     ['allure', {
         outputDir: './reports/allure-results',
         disableWebdriverStepsReporting: false,
