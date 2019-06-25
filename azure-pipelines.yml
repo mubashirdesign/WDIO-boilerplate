@@ -19,8 +19,13 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: '$(System.defaultWorkingDirectory)'
 
-- script: |
-    npm install
-    npm test
-  displayName: 'Run a multi-line script'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(System.defaultWorkingDirectory)'
+    customCommand: 'test'
