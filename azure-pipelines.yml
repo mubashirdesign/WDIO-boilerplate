@@ -19,6 +19,12 @@ steps:
     command: 'install'
     workingDir: '$(System.defaultWorkingDirectory)'
 
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(System.defaultWorkingDirectory)'
+    customCommand: 'start'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
