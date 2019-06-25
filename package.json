@@ -23,5 +23,8 @@
     "del": "^3.0.0",
     "sync-request": "^6.0.0",
     "webdriverio": "^5.4.7"
+  },
+  "dependencies": {
+    "chromedriver": "^75.0.0"
   }
 }
