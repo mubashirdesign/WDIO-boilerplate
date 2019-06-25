@@ -14,10 +14,9 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: NodeTool@0
+- task: UseNode@1
   inputs:
-    versionSpec: '8.x'
-  displayName: 'Install Node.js'
+    checkLatest: true
 
 - task: Npm@1
   inputs:
