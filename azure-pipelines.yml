@@ -28,3 +28,9 @@ steps:
     command: 'custom'
     workingDir: '$(System.defaultWorkingDirectory)'
     customCommand: 'test'
+
+    # Starter pipeline
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'wdio-0-0-junit-reporter.xml'

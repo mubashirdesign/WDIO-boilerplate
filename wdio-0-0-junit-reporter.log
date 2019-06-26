@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Verify_whether_webdriveruniversity_link_on_homepage_work_correctly" timestamp="2019-06-25T20:02:50" time="5.686" tests="2" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Verify whether webdriveruniversity link on homepage work correctly"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value=".\tests\webdriverUniversityTest.js"/>
+    </properties>
+    <testcase classname="chrome.Verify_whether_webdriveruniversity_link_on_homepage_work_correctly" name="check_that_the_contact_us_button_opens_the_contact_us_page" time="1.048">
+      <error message="element click intercepted: Element &lt;a href=&quot;Contact-Us/contactus.html&quot; target=&quot;_blank&quot; id=&quot;contact-us&quot;>...&lt;/a> is not clickable at point (456, 540). Other element would receive the click: &lt;h1>...&lt;/h1>&#xA;  (Session info: chrome=75.0.3770.100)&#xA;  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64)"/>
+      <system-err>
+        <![CDATA[
+Error: element click intercepted: Element <a href="Contact-Us/contactus.html" target="_blank" id="contact-us">...</a> is not clickable at point (456, 540). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17763 x86_64)
+    at getErrorFromResponseBody (C:\Users\qwertyuiop\Desktop\GithubRepos\WDIO-boilerplate\node_modules\webdriver\build\utils.js:340:10)
+    at Request._callback (C:\Users\qwertyuiop\Desktop\GithubRepos\WDIO-boilerplate\node_modules\webdriver\build\request.js:113:64)
+    at Request.self.callback (C:\Users\qwertyuiop\Desktop\GithubRepos\WDIO-boilerplate\node_modules\request\request.js:185:22)
+    at emitTwo (events.js:126:13)
+    at Request.emit (events.js:214:7)
+    at Request.<anonymous> (C:\Users\qwertyuiop\Desktop\GithubRepos\WDIO-boilerplate\node_modules\request\request.js:1161:10)
+    at emitOne (events.js:116:13)
+    at Request.emit (events.js:211:7)
+    at IncomingMessage.<anonymous> (C:\Users\qwertyuiop\Desktop\GithubRepos\WDIO-boilerplate\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:313:30)
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.Verify_whether_webdriveruniversity_link_on_homepage_work_correctly" name="check_that_the_login_button_opens_the_login_page" time="4.263"/>
+  </testsuite>
+</testsuites>
