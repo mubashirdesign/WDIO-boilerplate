@@ -35,5 +35,5 @@ steps:
     searchFolder: '$(System.DefaultWorkingDirectory)'
     testResultsFormat: 'JUnit'
     testResultsFiles: 'wdio-0-0-junit-reporter.xml'
-    condition: succeededOrFailed()
+    condition: always()
     
