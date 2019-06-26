@@ -32,6 +32,8 @@ steps:
     # Starter pipeline
 - task: PublishTestResults@2
   inputs:
+    searchFolder: '$(System.DefaultWorkingDirectory)'
     testResultsFormat: 'JUnit'
     testResultsFiles: 'wdio-0-0-junit-reporter.xml'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    condition: succeededOrFailed()
+    
