@@ -101,9 +101,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    port: 9515, // default for ChromeDriver
-    path: '/',
-    services: ['chromedriver'],
+    services: ['selenium-standalone'],
     //'sauce','testingbot','firefox-profile',,'devtools','applitools','browserstack','appium','phantomjs','static-server','visual-regression','webpack','webpack-dev-server','chromedriver','iedriver'
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -118,12 +116,12 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: ['dot',
     'spec',
-    ['junit', {
-        outputDir: './reports/junitResults/',
-        outputFileFormat: function(opts) { // optional
-            return `results-${opts.cid}.${opts.capabilities}.xml`
-        }
-    }],
+    // ['junit', {
+    //     outputDir: './reports/junitResults/',
+    //     outputFileFormat: function(opts) { // optional
+    //         return `results-${opts.cid}.${opts.capabilities}.xml`
+    //     }
+    // }],
     ['allure', {
         outputDir: './reports/allure-results',
         disableWebdriverStepsReporting: false,
